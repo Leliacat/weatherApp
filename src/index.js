@@ -11,8 +11,8 @@ const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 
 ReactDOM.render(
-    <Proviver
+    <Provider
         store ={createStoreWithMiddleware(reducers)}>
         <App />
-    </Proviver>
+    </Provider>
 , document.querySelector('.container'));
